@@ -31,7 +31,7 @@ const userSchema =new Schema({
 
 userSchema.pre<IUserDocument>('save',function(next){
     let user= this;
-    console.log('here'+user);
+   
     
   
     if(user.isModified('password')){
